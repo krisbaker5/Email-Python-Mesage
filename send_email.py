@@ -2,16 +2,16 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-sender_email = "krisbaker6@gmail.com"
-sender_password = "rerb ehuz qvqg pmyk"
-receiver_email = "kris.baker5@gmail.com"
+sender_email = "your_email@gmail.com"
+sender_password = "your app password"
+receiver_email = "receiver_email@example.com"
 
 message = MIMEMultipart()
 message["From"] = sender_email
 message["To"] = receiver_email
 message["Subject"] = "Automated Test Email"
 
-body = "Hey Kris. This is a test email for your automation project"
+body = "Hey there! This is a test email sent from a Python Project!"
 message.attach(MIMEText(body, "plain"))
 
 try:
